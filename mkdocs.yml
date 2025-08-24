@@ -1,29 +1,39 @@
 site_name: CS Learning
 site_url: https://tenshi0x0.github.io/CS-learning/
+site_author: Tenshi
 theme:
   name: material
-  language: zh
+  # language: zh
   features:
     - navigation.tabs           # 顶部标签导航
-    - navigation.tabs.sticky    # 标签固定
-    - navigation.sections       # 侧边栏分组
-    - navigation.expand         # 默认展开
-    - navigation.path          # 面包屑导航
+  #   - navigation.tabs.sticky    # 标签固定
+  #   - navigation.sections       # 侧边栏分组
+  #   - navigation.expand         # 默认展开
+  #   - navigation.path          # 面包屑导航
     - navigation.top           # 返回顶部
-    - navigation.indexes       # 章节索引页
+  #   - navigation.indexes       # 章节索引页
     - toc.follow              # 目录跟随
     - search.suggest          # 搜索建议
     - search.highlight        # 搜索高亮
-  palette:
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: 切换到浅色模式
-    - scheme: default
-      primary: indigo  
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: 切换到深色模式
+  # palette:
+  #   - scheme: slate
+  #     primary: indigo
+  #     accent: indigo
+  #     toggle:
+  #       icon: material/brightness-7
+  #       name: 切换到浅色模式
+  #   - scheme: default
+  #     primary: indigo  
+  #     accent: indigo
+  #     toggle:
+  #       icon: material/brightness-4
+  #       name: 切换到深色模式
+
+nav:
+  - 简介:
+    - 前言: index.md
+  
+  - 杂项:
+    - 搭建博客:
+      - 搭建 wiki: Miscellaneous\Setting_up_a_wiki.md
+      # - 临时: index.md
