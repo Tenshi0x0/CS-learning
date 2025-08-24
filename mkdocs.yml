@@ -46,8 +46,12 @@ markdown_extensions:
 nav:
   - 简介:
     - 前言: index.md
+
+  - 人工智能:
+    - 强化学习:
+      - MathFoundationRL: src/AI/RL/MathFoundationRL.md
   
   - 杂项:
     - 搭建博客:
-      - 搭建 wiki: Miscellaneous/Setting_up_a_wiki.md
+      - 搭建 wiki: src/Miscellaneous/Setting_up_a_wiki.md
       # - 临时: index.md
