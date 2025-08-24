@@ -3,6 +3,11 @@ site_url: https://tenshi0x0.github.io/CS-learning/
 site_author: Tenshi
 theme:
   name: material
+
+  favicon: assets/icon-pen-tip.png
+  logo: assets/icon-pen-tip.png
+
+  # 支持页面 亮/暗
   palette:
     # 暗色模式（默认）
     - scheme: slate
