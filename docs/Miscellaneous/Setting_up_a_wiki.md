@@ -103,6 +103,27 @@ git add .; git commit -m "xxx"; git push
         - pymdownx.superfences
     ```
 
+## 进阶操作
+
+### 嵌入 PDF 预览
+
+1）方法 1：
+
+```md
+<iframe src="/CS-learning/assets/pdfs/test.pdf" width="100%" height="600px">
+</iframe>
+```
+
+<iframe src="/CS-learning/assets/pdfs/test.pdf" width="100%" height="600px">
+</iframe>
+
+2）方法 2：
+
+```md
+[打开 PDF 文档](/CS-learning/assets/pdfs/test.pdf)
+```
+
+[打开 PDF 文档](/CS-learning/assets/pdfs/test.pdf)
 
 ## 美化
 
