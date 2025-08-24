@@ -44,8 +44,9 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - 简介:
+  - 首页:
     - 前言: index.md
+    - 友链: friendlyURL.md 
 
   - 人工智能:
     - 强化学习:
