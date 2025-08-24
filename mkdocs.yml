@@ -3,7 +3,18 @@ site_url: https://tenshi0x0.github.io/CS-learning/
 site_author: Tenshi
 theme:
   name: material
-  # language: zh
+  palette:
+    # 暗色模式（默认）
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: 切换到亮色模式
+    
+    # 亮色模式
+    - scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: 切换到暗色模式
   features:
     - navigation.tabs           # 顶部标签导航
   #   - navigation.tabs.sticky    # 标签固定
