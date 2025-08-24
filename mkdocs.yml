@@ -15,19 +15,17 @@ theme:
     - toc.follow              # 目录跟随
     - search.suggest          # 搜索建议
     - search.highlight        # 搜索高亮
-  # palette:
-  #   - scheme: slate
-  #     primary: indigo
-  #     accent: indigo
-  #     toggle:
-  #       icon: material/brightness-7
-  #       name: 切换到浅色模式
-  #   - scheme: default
-  #     primary: indigo  
-  #     accent: indigo
-  #     toggle:
-  #       icon: material/brightness-4
-  #       name: 切换到深色模式
+    - content.code.copy  # 添加复制按钮
+    - content.code.annotate  # 代码注释
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 nav:
   - 简介:

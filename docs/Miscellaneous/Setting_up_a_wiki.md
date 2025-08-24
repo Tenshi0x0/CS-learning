@@ -9,16 +9,22 @@
 我是参考 [mkdocs-material 的教程](https://squidfunk.github.io/mkdocs-material/getting-started/)，在我个人 github 博客上搭建的，下文将以我自己搭建流程讲解。
 
 1. 首先在 github 上新建一个 repo，然后 `clone` 到本地，目录假设为 `D:\MyBlog\CS-learning`。
+
 2. `cd` 进 `D:\MyBlog\CS-learning`，执行 `mkdocs new .`。
+
 3. `pip install mkdocs-material`。
+
 4. 修改 `mkdocs.yml` 为
+
     ```yaml
     site_name: CS Learning
     site_url: https://[github_user_name].github.io/[your wiki name]/
     theme:
         name: material
     ```
+
 5. 创建 GitHub Actions 文件，也就是 `CS-learning` 目录下创建 `.github/workflows/ci.yml`，内容为：
+
     ```yaml
     name: ci 
     on:
@@ -50,20 +56,23 @@
         - run: pip install mkdocs-material 
         - run: mkdocs gh-deploy --force
     ```
-6. 然后推送：
+
+6. 然后推送（执行的时候如果你没登录 github 会终端提醒你登录）：
+
     ```sh
     git add .
     git commit -m "Initial commit"
     git push -u origin main
     ```
+
 7. 最后设置 GitHub Pages：
+
     - 等待 Actions 完成（可能要一分钟）
     - 进入 Settings → Pages
     - Source 选择 "Deploy from a branch"（我这边是默认就是 "Deploy from a branch"）
     - Branch 选择 `gh-pages`
-
-
-设置完后访问 `https://[github_user_name].github.io/[your wiki name]/` 即可。
+    
+    设置完后访问 `https://[github_user_name].github.io/[your wiki name]/` 即可。
 
 ## 后续维护
 
@@ -76,9 +85,23 @@ git add .
 git commit -m "xxx"
 git push
 
-# 当然我更喜欢用一行提交：
+# 当然用一行提交更方便：
 git add .; git commit -m "xxx"; git push
 ```
+
+## 可能遇到的问题
+
+- markdown 标号（如 `1.`，`2.`）下面有代码块的时候其下面的标号会被重置为 `1.`，以及代码没有高亮等问题，可通过在根目录的 `mkdocs.yml` 添加如下代码解决：
+    ```yaml
+    markdown_extensions:
+        - pymdownx.highlight:
+            anchor_linenums: true
+            line_spans: __span
+            pygments_lang_class: true
+        - pymdownx.inlinehilite
+        - pymdownx.snippets
+        - pymdownx.superfences
+    ```
 
 
 ## 美化
