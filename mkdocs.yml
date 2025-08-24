@@ -2,3 +2,28 @@ site_name: CS Learning
 site_url: https://tenshi0x0.github.io/CS-learning/
 theme:
   name: material
+  language: zh
+  features:
+    - navigation.tabs           # 顶部标签导航
+    - navigation.tabs.sticky    # 标签固定
+    - navigation.sections       # 侧边栏分组
+    - navigation.expand         # 默认展开
+    - navigation.path          # 面包屑导航
+    - navigation.top           # 返回顶部
+    - navigation.indexes       # 章节索引页
+    - toc.follow              # 目录跟随
+    - search.suggest          # 搜索建议
+    - search.highlight        # 搜索高亮
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到浅色模式
+    - scheme: default
+      primary: indigo  
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到深色模式
