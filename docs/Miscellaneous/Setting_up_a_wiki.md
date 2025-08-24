@@ -75,6 +75,9 @@ mkdocs serve
 git add .
 git commit -m "xxx"
 git push
+
+# 当然我更喜欢用一行提交：
+git add .; git commit -m "xxx"; git push
 ```
 
 
