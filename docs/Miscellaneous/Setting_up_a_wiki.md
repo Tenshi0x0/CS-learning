@@ -74,68 +74,6 @@
     
     设置完后访问 `https://[github_user_name].github.io/[your wiki name]/` 即可。
 
-```cpp
-// Problem: D. Chicken Jockey
-// Contest: Codeforces - Codeforces Round 1044 (Div. 2)
-// URL: https://codeforces.com/contest/2133/problem/D
-// Memory Limit: 256 MB
-// Time Limit: 2000 ms
-// 
-// Powered by CP Editor (https://cpeditor.org)
-
-#include<bits/stdc++.h>
-using namespace std;
- 
-#define debug(x) cerr << #x << ": " << (x) << endl
-#define rep(i,a,b) for(int i=(a);i<=(b);i++)
-#define dwn(i,a,b) for(int i=(a);i>=(b);i--)
-#define SZ(a) ((int) (a).size())
-#define pb push_back
-#define all(x) (x).begin(), (x).end()
- 
-#define x first
-#define y second
-#define int long long
-using pii = pair<int, int>;
-using ll = long long;
- 
-inline void read(int &x){
-    int s=0; x=1;
-    char ch=getchar();
-    while(ch<'0' || ch>'9') {if(ch=='-')x=-1;ch=getchar();}
-    while(ch>='0' && ch<='9') s=(s<<3)+(s<<1)+ch-'0',ch=getchar();
-    x*=s;
-}
-
-const int N=2e5+5;
-
-int w[N];
-
-void solve(){
-	int n; cin>>n;
-	int sum=0;
-	rep(i, 1, n) read(w[i]), sum+=w[i];
-	vector<int> f(n+1);
-	f[n]=n;
-	int last=0;
-	dwn(i, n-1, 1){
-		int val=f[i+1]-2+min(i, w[i+1]);
-		f[i]=max(f[i+1], val);
-		last=val;
-	}
-	
-	int dt=(last);
-	// debug(sum);
-	cout<<sum-dt<<"\n";
-}
-
-signed main(){
-	int cs; cin>>cs;
-	while(cs--) solve();
-	return 0;
-}
-```
-
 ## 后续维护
 
 ```sh
