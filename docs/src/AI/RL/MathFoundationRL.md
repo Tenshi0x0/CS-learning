@@ -20,23 +20,5 @@
 
 ## 我的笔记
 
-[1 Basic Concepts](/CS-learning/assets/pdfs/MathFoundationRL/my-notes/1 Basic Concepts.pdf)
+<https://github.com/Tenshi0x0/MathFoundationRL/tree/master/my%20notes/pdfs>
 
-[2 State Values and Bellman Equation](/CS-learning/assets/pdfs/MathFoundationRL/my-notes/2 State Values and Bellman Equation.pdf)
-
-[3 Optimal State Values and Bellman Optimality Equation](/CS-learning/assets/pdfs/MathFoundationRL/my-notes/3 Optimal State Values and Bellman Optimality Equation.pdf)
-
-[4 Value Iteration and Policy Iteration](/CS-learning/assets/pdfs/MathFoundationRL/my-notes/4 Value Iteration and Policy Iteration.pdf)
-
-[5 Monte Carlo Methods](/CS-learning/assets/pdfs/MathFoundationRL/my-notes/5 Monte Carlo Methods.pdf)
-
-[6 Stochastic Approximation](/CS-learn
-ing/assets/pdfs/MathFoundationRL/my-notes/6 Stochastic Approximation.pdf)
-
-[7 Temporal-Difference Methods](/CS-learning/assets/pdfs/MathFoundationRL/my-notes/7 Temporal-Difference Methods.pdf)
-
-[8 Value Function Approximation](/CS-learning/assets/pdfs/MathFoundationRL/my-notes/8 Value Function Approximation.pdf)
-
-[9 Policy Gradient Methods](/CS-learning/assets/pdfs/MathFoundationRL/my-notes/9 Policy Gradient Methods.pdf)
-
-[10 Actor-Critic Methods](/CS-learning/assets/pdfs/MathFoundationRL/my-notes/10 Actor-Critic Methods.pdf)
