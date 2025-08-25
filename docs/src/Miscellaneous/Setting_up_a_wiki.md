@@ -67,7 +67,7 @@
 
 7. 最后设置 GitHub Pages：
 
-    - 等待 Actions 完成（可能要一分钟）
+    - 等待 Actions 完成（大概几分钟（？））
     - 进入 Settings → Pages
     - Source 选择 "Deploy from a branch"（我这边是默认就是 "Deploy from a branch"）
     - Branch 选择 `gh-pages`
