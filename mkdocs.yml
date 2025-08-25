@@ -4,8 +4,8 @@ site_author: Tenshi
 theme:
   name: material
 
-  favicon: assets/icons/icon-pen-tip.png
-  logo: assets/icons/icon-pen-tip.png
+  favicon: assets/icons/icon-notebook-check.svg
+  logo: assets/icons/icon-notebook-check.svg
 
   # 支持页面 亮/暗
   palette:
