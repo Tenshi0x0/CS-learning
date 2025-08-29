@@ -204,7 +204,15 @@ highlight:
     style_dark: "monokai"
 ```
 
+**支持图片**
 
+改博客的头图比较简单，到 `_config.fluid.yml` 找到对应的 `banner_img` 修改就行，图片路径我用的是在 `source` 下手动建立的 `assets`（因为头图不多，丢一个博客文件夹下管理就行，当然放图床也行）。
+
+至于博文内的图片的加载：
+
+- `npm install hexo-asset-img --save`（下完之后可能会提示有 vulnerabilities，即使我按照提示运行了 `npm audit fix --force` 仍然显示还有 vulnerabilities，但不影响正常使用）
+- 将 ` _config.yml` 设置 `post_asset_folder: true`（我这边默认是 `true`）
+- 然后文件结构有要求，比如博文是 `abc.md`，那么就要在同目录下有一个同名文件夹 `abc`，把图片（记为 `1.png`）放在 `abc` 下。那么博文内就可以直接用 `<img src="1.png" width="50%">` 加载图片了。
 
 
 
