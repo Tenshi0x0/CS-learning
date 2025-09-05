@@ -55,4 +55,5 @@ nav:
   - 杂项:
     - 搭建博客: src/Miscellaneous/Setting_up_a_blog.md
     - 搭建 wiki: src/Miscellaneous/Setting_up_a_wiki.md
+    - 配置虚拟机: src/Miscellaneous/Setting_up_VMware.md
       # - 临时: index.md
