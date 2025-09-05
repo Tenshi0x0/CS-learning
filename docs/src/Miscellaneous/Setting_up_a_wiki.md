@@ -91,17 +91,23 @@ git add .; git commit -m "xxx"; git push
 
 ## 可能遇到的问题
 
-- markdown 标号（如 `1.`，`2.`）下面有代码块的时候其下面的标号会被重置为 `1.`，以及代码没有高亮等问题，可通过在根目录的 `mkdocs.yml` 添加如下代码解决：
-    ```yaml
-    markdown_extensions:
-        - pymdownx.highlight:
-            anchor_linenums: true
-            line_spans: __span
-            pygments_lang_class: true
-        - pymdownx.inlinehilite
-        - pymdownx.snippets
-        - pymdownx.superfences
-    ```
+### 编号
+
+markdown 编号（如 `1.`，`2.`）下面有代码块的时候其下面的标号会被重置为 `1.`，以及代码没有高亮等问题，可通过在根目录的 `mkdocs.yml` 添加如下代码解决：
+```yaml
+markdown_extensions:
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+```
+
+### 渲染
+
+渲染删除线：`pymdownx.tilde`
 
 ## 进阶操作
 
