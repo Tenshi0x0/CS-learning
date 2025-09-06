@@ -33,3 +33,11 @@ sudo apt update
 sudo apt install open-vm-tools open-vm-tools-desktop -y
 sudo reboot
 ```
+
+#### 缩放终端大小
+
+放大：`Ctrl + Shift + +`
+
+缩小：`Ctrl + -`
+
+恢复默认：`Ctrl + 0`
