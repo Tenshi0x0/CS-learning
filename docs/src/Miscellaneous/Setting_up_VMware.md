@@ -41,3 +41,7 @@ sudo reboot
 缩小：`Ctrl + -`
 
 恢复默认：`Ctrl + 0`
+
+上面的操作是一次性的，关掉就重置了，想要永久生效可以设置右上角的 `Preferences`：
+
+![vm1](/CS-learning/src/Miscellaneous/assets/vm1.png)
