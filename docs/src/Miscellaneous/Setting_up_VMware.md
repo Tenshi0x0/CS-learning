@@ -51,3 +51,9 @@ sudo reboot
 ```sh
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.3
 ```
+
+#### 显示隐藏文件
+
+文件名或目录名前缀带一个点 `.` 时为隐藏文件。
+
+用 `ctrl + H` 显示。
