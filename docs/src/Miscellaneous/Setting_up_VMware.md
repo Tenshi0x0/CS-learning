@@ -57,3 +57,7 @@ gsettings set org.gnome.desktop.interface text-scaling-factor 1.3
 文件名或目录名前缀带一个点 `.` 时为隐藏文件。
 
 用 `ctrl + H` 显示。
+
+#### 全屏
+
+`ctrl + alt + enter`
