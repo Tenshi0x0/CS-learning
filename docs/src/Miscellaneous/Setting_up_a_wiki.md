@@ -85,11 +85,11 @@ git add .
 git commit -m "xxx"
 git push
 
-# 当然用一行提交更方便：
+# 当然用一行提交更方便（不过我是用 vscode 的 git 提交的）：
 git add .; git commit -m "xxx"; git push
 ```
 
-## 在其他电脑上继续写 wiki
+### 在其他电脑上继续写 wiki
 
 ```sh
 

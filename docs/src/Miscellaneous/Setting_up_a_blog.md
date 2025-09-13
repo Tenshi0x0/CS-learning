@@ -11,8 +11,8 @@
 本文以 Github 博客 + Hexo 为例讲解。
 
 1. 首先准备：
-- Node.js
-- Git
+- Node.js（[下载](https://nodejs.org/zh-cn/download)）
+- Git（[下载](https://git-scm.com/downloads)）
 
 2. 创建 GitHub 仓库，名字必须为 `[user_name].github.io`，设为 Public 且不要初始化 README。
 
@@ -92,20 +92,51 @@
       git push -u origin source
       ```
 
-   5. 创建部署脚本 `deploy.ps1`，执行时使用指令 `.\deploy.ps1 -Verbose` 即可。
+   5. 创建部署脚本 `deploy.ps1`，执行时使用指令 `.\deploy.ps1` 即可。
 
       ```sh
-      # 保存源码
-      git add .
-      git commit -m "Update blog source"
-      git push
-      
-      # 部署网站
+      $ErrorActionPreference = 'Stop'
+
+      # 始终在脚本所在目录（blog/）内执行，避免误操作外层仓库
+      Push-Location $PSScriptRoot
+      try {
+      # 确保在 source 分支并与远端同步
+      git fetch --all --prune
+
+      $current = (git rev-parse --abbrev-ref HEAD).Trim()
+      if ($current -ne 'source') {
+         git show-ref --verify --quiet refs/heads/source
+         if ($LASTEXITCODE -eq 0) {
+            git checkout source
+         } else {
+            git checkout -b source origin/source
+         }
+      }
+
+      git pull --rebase origin source
+
+      # 提交源码改动（若有）
+      git add -A
+      git diff --staged --quiet
+      if ($LASTEXITCODE -ne 0) {
+         git commit -m "Update blog source"
+      } else {
+         Write-Host "No source changes to commit" -ForegroundColor Yellow
+      }
+
+      git push -u origin source
+
+      # 生成并部署站点
       hexo clean
       hexo generate
       hexo deploy
-      
+
       Write-Host "Blog deployed successfully!" -ForegroundColor Green
+      }
+      finally {
+      Pop-Location
+      }
+
       ```
 
       
@@ -134,11 +165,16 @@ hexo clean; hexo g; hexo s
 
 ```sh
 # 克隆源码
-git clone -b source https://github.com/你的用户名/你的用户名.github.io.git blog
+git clone https://github.com/你的用户名/你的用户名.github.io.git blog
 cd blog
 
-# 安装依赖
+npm install -g hexo-cli
+
+# 安装目录下的依赖
 npm install
+npm install hexo --save
+
+hexo -v  # 验证
 
 # 下面即可正常使用
 ```
