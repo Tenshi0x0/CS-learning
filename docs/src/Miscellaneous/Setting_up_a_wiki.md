@@ -89,6 +89,16 @@ git push
 git add .; git commit -m "xxx"; git push
 ```
 
+## 在其他电脑上继续写 wiki
+
+```sh
+
+# 先 git clone 整个 repo 并 cd 进去
+
+pip install mkdocs
+pip install mkdocs-material
+```
+
 ## 可能遇到的问题
 
 ### 编号
