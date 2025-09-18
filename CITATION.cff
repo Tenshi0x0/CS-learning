@@ -7,3 +7,13 @@ authors:
   - family-names: "Tenshi"
     given-names: ""
 repository-code: "https://github.com/Tenshi0x0/CS-learning"
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Tenshi"
+      given-names: ""
+  title: "CS-learning"
+  version: "1.0.0"
+  url: "https://github.com/Tenshi0x0/CS-learning"
+  year: 2025
+  notes: "Continuously updated; please cite the specific version you used."
