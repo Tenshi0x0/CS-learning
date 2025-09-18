@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "CS-learning"
+version: "1.0.0"
+date-released: 2025-09-18
+authors:
+  - family-names: "Tenshi"
+    given-names: ""
+repository-code: "https://github.com/Tenshi0x0/CS-learning"
