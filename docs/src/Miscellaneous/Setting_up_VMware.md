@@ -18,7 +18,7 @@
 
 比如 `ping -c 4 8.8.8.8` ping 不通（或者随便开一个网页）。
 
-在 Windows 打开 服务 (services.msc)，保证：
+在主机（例如 Windows）打开 服务 (services.msc)，保证：
 
 `VMware NAT Service, VMware DHCP Service`
 
