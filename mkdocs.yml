@@ -57,4 +57,5 @@ nav:
     - 搭建博客: src/Miscellaneous/Setting_up_a_blog.md
     - 搭建 wiki: src/Miscellaneous/Setting_up_a_wiki.md
     - 配置虚拟机: src/Miscellaneous/Setting_up_VMware.md
+    - 连接集群: src\Miscellaneous\Connect_to_a_cluster.md
       # - 临时: index.md
