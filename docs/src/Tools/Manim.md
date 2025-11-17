@@ -1,6 +1,6 @@
 # Manim
 
-教程见：[ManimGL 教程文档](https://docs.manim.org.cn/)
+详细教程见：[ManimGL 教程文档](https://docs.manim.org.cn/)
 
 ## 环境配置
 
@@ -30,11 +30,7 @@ Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\
 ffmpeg-8.0-full_build\bin\ffmpeg.exe
 ```
 
-然后设置一下 PATH：
-
-```sh
-setx PATH "C:\Users\24789\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.0-full_build\bin"
-```
+然后把这个 bin 加入环境变量 PATH：
 
 开新的 CMD 验证即可：
 
